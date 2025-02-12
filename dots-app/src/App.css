@@ -1,38 +1,131 @@
-.App {
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Section Styling */
+header {
+  background-color: #fff;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  font-size: 2.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Section 2: Cover */
+.cover {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+  clip-path: ellipse(60% 50% at 50% 100%); /* Arch at the bottom */
+}
+
+
+.cover h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cover p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.circle-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Testimonials Section Styling */
+.testimonials {
+  background-color: navy; /* Set the background to navy color */
+  color: white; /* Text color */
+  padding: 0px 20px;
+  clip-path: ellipse(60% 50% at 50% 0%); /* Create the downward arch shape */
+  text-align: center; /* Center align the text */
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.testimonial-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.testimonial-item p {
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.testimonial-item h4 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Partners Section Styling */
+.partners {
+  background-color: #7b6969;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.partners h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.partner-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.partner-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
